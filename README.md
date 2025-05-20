@@ -1,21 +1,27 @@
 # Design-of-a-Smart-Home-Control-System-Using-IoT-Technology
 
-Một dự án IoT thu thập dữ liệu môi trường và gửi về server qua MQTT.
+This is a project for applicating IoT in a Smart Home.
 
-## 🚀 Tính năng
-- Đọc nhiệt độ, độ ẩm từ DHT22
-- Kết nối WiFi và gửi dữ liệu qua MQTT
-- Cấu hình dễ dàng qua file `.env` hoặc serial
-
-## 🛠️ Yêu cầu phần cứng
+## 🚀 Feature
+- Read temperature and huminity with DHT11 sensor
+- Read fire (digital signal), smoke(analog signal), rain(analog signal) sensors and send data to web dashboard, then procceed to control buzzle and servos
+- Connect Wifi and send data via MQTT (AdaFruit IO)
+- Can control window and door (this is servos) via web server or app
+- Using RFID open a main door for my house
+  
+## 🛠️ Hardward Components
 - ESP32 DevKit V1
-- Cảm biến DHT22
-- Nguồn 5V/2A
-- (Tuỳ chọn) OLED SSD1306 để hiển thị
-
-## 🧰 Yêu cầu phần mềm
-- PlatformIO (hoặc Arduino IDE)
-- MQTT broker (ví dụ: Mosquitto)
+- DHT11 sensor
+- RFID
+- Servos
+- Fire sensor
+- Smoke sensor
+- Rain sensor
+- Buzzle
+- Adapter (5V-3A/2A)
+  
+## 🧰 Software Components
+- Arduino IDE
 
 ## 🔧 Cài đặt
 
